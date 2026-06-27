@@ -91,18 +91,3 @@ server, load balancer, and firewall to the browser, which renders it.
 | Web server serves the page | §6 |
 | Application server generates the page | §7 |
 | Application server queries the database | §8 |
-
-## Hosting & submitting
-
-1. **Host the page:** the site is `index.html` + `request-flow.png` (also bundled
-   as `blog.zip`). Deploy on Cloudflare Pages; it serves at your subdomain.
-2. **Task 0:** put the published blog URL in `0-blog_post`.
-3. **Task 1:** put the diagram image URL (`<your-site>/request-flow.png`) in
-   `1-what_happen_when_diagram`.
-
-## Regenerating the diagram
-
-```
-python3 make_diagram.py
-rsvg-convert -z 2 request-flow.svg -o request-flow.png
-```
